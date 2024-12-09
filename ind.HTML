@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horticulture Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#tips" class="nav-link">Gardening Tips</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="grid-item">
+            <h2>Welcome to Horticulture Haven!</h2>
+            <p>Discover the beauty and benefits of gardening and plant care. Dive into the world of flora, tips for sustainable growth, and inspiring ideas for your garden!</p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="grid-item">
+            <h2>Horticulture Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://res.cloudinary.com/ddwjtzslr/image/upload/v1732199973/ja_rtai6y.jpg" alt="Beautiful Garden">
+                <img src="https://res.cloudinary.com/ddwjtzslr/image/upload/v1732199618/pic_ofumfg.jpg" alt="Tropical Plants">
+                <img src="https://res.cloudinary.com/ddwjtzslr/image/upload/v1732184814/image_f75ean.jpg" alt="Floral Arrangement">
+                <img src="https://res.cloudinary.com/ddwjtzslr/image/upload/v1732198958/j_goa59m.webp" alt="Indoor Plants">
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section id="tips" class="grid-item">
+            <h2>Gardening Tips</h2>
+            <p>Learn about seasonal planting, soil care, and eco-friendly gardening methods to make your green space thrive.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="grid-item">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+                <p class="form-feedback" aria-live="polite"></p>
+            </form>
+        </section>
+    </div>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+</body>
+</html>
