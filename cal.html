@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="jay.css">
 </head>
 <body>
+
     <div class="calculator">
         <input type="text" id="display" disabled />
         <div class="buttons">
@@ -34,10 +35,20 @@
             <button onclick="calculateSquareRoot()">√x</button>
             <button onclick="calculatePercentage()">%</button>
             <button onclick="appendOperator('**')">xʸ</button>
+
+            <!-- Trigonometric Operations -->
+            <button onclick="calculateTrig('sin')">sin</button>
+            <button onclick="calculateTrig('cos')">cos</button>
+            <button onclick="calculateTrig('tan')">tan</button>
+
+            <!-- On/Off and  Button -->
+            <button onclick="toggleCalculator()">On/Off</button>
+            
         </div>
-        
     </div>
 
     <script src="ja.js"></script>
 </body>
 </html>
+
+        

@@ -53,3 +53,29 @@ function calculatePercentage() {
         currentInput = '';
     }
 }
+function calculateTrig(operation) {
+    const value = parseFloat(display.value);
+    if (isNaN(value)) {
+        display.value = 'Error';
+        return;
+    }
+
+    switch (operation) {
+        case 'sin':
+            display.value = Math.sin(value * (Math.PI / 180)); // Convert degrees to radians
+            break;
+        case 'cos':
+            display.value = Math.cos(value * (Math.PI / 180)); // Convert degrees to radians
+            break;
+        case 'tan':
+            display.value = Math.tan(value * (Math.PI / 180)); // Convert degrees to radians
+            break;
+        default:
+            display.value = 'Error';
+    }
+}
+function toggleCalculator() {
+    isOn = !isOn; // Toggle the state
+    display.value = isOn ? '' : 'OFF'; // Show OFF when turned off
+}
+
